@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PayAgain : MonoBehaviour
+public class PayAgain1 : MonoBehaviour
 {
     [SerializeField] GameObject PaymentDone;
     [SerializeField] GameObject Scan;
@@ -11,18 +11,18 @@ public class PayAgain : MonoBehaviour
     [SerializeField] GameObject Details;
     [SerializeField] GameObject PaymentLoading;
     [SerializeField] GameObject ScanningDone;
+    [SerializeField] GameObject ErrPanel;
     [SerializeField] TextMeshProUGUI DetailsAmount;
     [SerializeField] TextMeshProUGUI PaymentTabAmount;
     [SerializeField] TextMeshProUGUI Tally;
     [SerializeField] GameObject SplitwisePage;
-
     [SerializeField] GameObject SplitwiseButton;
     [SerializeField] GameObject SplittedDetails;
 
     public void onPayAgain()
     {
-        DetailsAmount.text="$ 166.93";
-        PaymentTabAmount.text="$ 166.93";
+        DetailsAmount.text="$ 85.74";
+        PaymentTabAmount.text="$ 85.74";
         Tally.text="Tally Successful!";
         
         PaymentDone.SetActive(false);
@@ -31,6 +31,7 @@ public class PayAgain : MonoBehaviour
         Details.SetActive(false);
         PaymentLoading.SetActive(false);
         ScanningDone.SetActive(false);
+        ErrPanel.SetActive(false);
         SplittedDetails.SetActive(false);
         SplitwiseButton.SetActive(true);
     }

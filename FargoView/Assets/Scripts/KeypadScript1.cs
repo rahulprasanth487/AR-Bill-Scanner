@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class KeypadScript : MonoBehaviour
+public class KeypadScript1 : MonoBehaviour
 {
     [SerializeField] GameObject amount;
     [SerializeField] GameObject keypad;
@@ -107,7 +107,6 @@ public class KeypadScript : MonoBehaviour
         {
             amountTextField.text=Pop(currentText);
         }
-        
     }
 
     public void updateTips()
@@ -126,7 +125,7 @@ public class KeypadScript : MonoBehaviour
 
         
         double newAmount = double.Parse(numericPart);
-        double oldAmount = 166.93;
+        double oldAmount = 585.74;
 
         double tipsAmount = newAmount - oldAmount;
 
